@@ -1,4 +1,4 @@
-//1. 반복문의 이해
+// 1. 반복문의 이해
 // for (초기화구문; 조건문; 증감문)
 // while(조건문)
 // 조건문 위치에 있는 값이 true인 경우 계속 반복
@@ -29,7 +29,7 @@
 //     console.log(arr[i])
 // }
 
-//2 순차탐색
+// 2 순차탐색
 
 // let arr = [1,2,3,4,5,6,7,8,9,10]
 // let arr_N = [1,2,3,4,5...N]
@@ -140,26 +140,26 @@
 // console.log(solution3([3,1,1,1,1,1,1,2,0,3]) === 8)
 // console.log(solution3([3,2,2,2,2,2,2,2,3]) === 0)
 // console.log(solution3([3,1,0,0,1,1,1,1,0,0,3]) === 5)
-console.log(solution3([3,2,2,2,1,1,1,1,1,1,1,2,2,2,2,3]) === 9)
+// console.log(solution3([3,2,2,2,1,1,1,1,1,1,1,2,2,2,2,3]) === 9)
 
-function solution3(arr){
-    let sum = 0;
-    for(let i =1; i < arr.length-1; i++){
-       if(arr[i] === 1){
-        arr[i] = 0
-        sum++
-       }
-       if(arr[i] === 0 &&(arr[i-1] === 2 || arr[i+1] === 2)){
-        arr[i] = 3
-        sum++
-       }
+// function solution3(arr){
+//     let sum = 0;
+//     for(let i =1; i < arr.length-1; i++){
+//        if(arr[i] === 1){
+//         arr[i] = 0
+//         sum++
+//        }
+//        if(arr[i] === 0 &&(arr[i-1] === 2 || arr[i+1] === 2)){
+//         arr[i] = 3
+//         sum++
+//        }
        
-    }   
-    return sum
-}
+//     }   
+//     return sum
+// }
 
-//알고리즘 답안
-//111111111111111111111
+// 알고리즘 답안
+// 111111111111111111111
 // function solution(arr){
 //     for(let i =0; i < arr.length; i++){
 //         if(arr[i] == 3){
@@ -168,7 +168,7 @@ function solution3(arr){
 //     }
 //     return -1
 // }
-//22222222222222
+// 22222222222222
 // function solution2(arr,n){
 //     let sum = 0;
 //     for(let i =0; i < arr.length; i++){
@@ -178,7 +178,7 @@ function solution3(arr){
 //     }
 //     return sum
 // }
-//33333333333333
+// 33333333333333
 
 
-//블로그가 아닌 슬랙
+// 블로그가 아닌 슬랙
