@@ -2,8 +2,9 @@ function solution3 (arr, h){
     let answer = 0;
 
     arr.sort((a,b) => {
-        if(a > b) return -1;
+        if(a < b) return -1;
     })
+    console.log(arr)
     
     for(let i =0; i < arr.length -1; i++){
         if(arr[i] - h > arr[i+1]){
@@ -15,4 +16,4 @@ function solution3 (arr, h){
     if(arr[arr.length-1] !== 0) answer++
     return answer;
 }
-console.log(solution3([26,35,42,12,0] , 9))
+console.log(solution3([26,35,42,12,0] , 9) === 3)
